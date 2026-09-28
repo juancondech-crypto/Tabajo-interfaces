@@ -1,0 +1,86 @@
+.caja-contenido {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.link-volver {
+    color: #000;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.etiqueta-azul {
+    font-size: 11px;
+    color: #1b92c5;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.caja-contenido h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.caja-resumen {
+    background-color: #E5E0D5;
+    border: 1px solid #777;
+    padding: 12px 15px;
+    font-size: 13px;
+    font-family: monospace;
+    margin-bottom: 25px;
+    letter-spacing: 0.5px;
+    word-break: break-word;
+}
+
+.tabla-resultado {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    font-size: 13px;
+}
+
+.tabla-resultado th {
+    text-align: left;
+    padding: 10px 0;
+    border-bottom: 1px solid #777;
+    font-size: 11px;
+    color: #555;
+    letter-spacing: 1px;
+    text-transform: UPPERCASE;
+}
+
+.tabla-resultado td {
+    padding: 14px 0;
+    border-bottom: 1px solid #D5D0C5;
+    font-size: 14px;
+}
+
+.alinear-derecha {
+    text-align: right;
+}
+
+.btn-menu {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    background-color: #ECE6D8;
+    border: 1px solid #333;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 1px;
+    transition: background 0.2s;
+}
+
+.btn-menu:hover {
+    background-color: #DFDAD0;
+}

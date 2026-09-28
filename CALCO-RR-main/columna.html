@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCO - Columnas de hormigón</title>
+    <link rel="stylesheet" href="muro.css">
+    <script src="https://kit.fontawesome.com/9d1a86738f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="pantalla">
+
+        <aside class="panel-oscuro">
+            <div class="logo-contenedor">
+                <div class="logo-circulo"><span class="punto"></span></div>
+                <div class="logo-texto">CALCO</div>
+            </div>
+            <nav class="menu-lateral">
+                <a href="muro.html" class="nav-item"><div class="numero">1</div> Muro de ladrillo</a>
+                <a href="viga.html" class="nav-item"><div class="numero">2</div> Viga de hormigón</a>
+                <a href="columna.html" class="nav-item activo"><div class="numero">3</div> Columnas de hormigón</a>
+                <a href="contrapiso.html" class="nav-item"><div class="numero">4</div> Contrapisos</a>
+                <a href="techo.html" class="nav-item"><div class="numero">5</div> Techo</a>
+                <a href="piso.html" class="nav-item"><div class="numero">6</div> Pisos</a>
+                <a href="pintura.html" class="nav-item"><div class="numero">7</div> Pintura</a>
+            </nav>
+            <div class="salir-container">
+                <a href="login.html" class="nav-item"><div class="numero">8</div> Salir</a>
+            </div>
+        </aside>
+
+        <main class="panel-claro">
+            <div class="contenido-formulario">
+                <a href="menu-principal.html" class="enlace-menu">← MENÚ</a>
+                <span class="subtitulo">CÁLCULO 3 DE 7</span>
+                <h1>Columnas de hormigón</h1>
+
+                <form class="form-calculo" action="resultado-columna.html" method="GET">
+                    <label>SECCIÓN</label>
+                    <div class="grupo-opciones">
+                        <input type="radio" id="col20" name="seccion" value="20x20 cm" class="radio-opcion" checked>
+                        <label for="col20" class="btn-opcion">20×20 cm</label>
+
+                        <input type="radio" id="col30" name="seccion" value="30x30 cm" class="radio-opcion">
+                        <label for="col30" class="btn-opcion">30×30 cm</label>
+                    </div>
+
+                    <label for="alto">ALTO</label>
+                    <div class="input-contenedor">
+                        <input type="number" id="alto" name="alto" value="3.00" step="0.01" required>
+                        <span class="unidad">m</span>
+                    </div>
+
+                    <label for="cantidad">CANTIDAD DE COLUMNAS</label>
+                    <div class="input-contenedor">
+                        <input type="number" id="cantidad" name="cantidad" value="4" min="1" step="1" required>
+                        <span class="unidad">u</span>
+                    </div>
+
+                    <button type="submit" class="btn-calcular">CALCULAR</button>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <small class="creditos">COLUMNA</small>
+        <small class="creditos-derecha">HOJA 08 · CALCO v1.0 &nbsp;&nbsp;&nbsp; ESC. N.T.S.</small>
+    </footer>
+</body>
+</html>

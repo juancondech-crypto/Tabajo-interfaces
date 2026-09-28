@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>CALCO - Login</title>
+        <meta name="description" content="Calculadora de materiales de construccion">
+        <meta name="keywords" content="HTML, CSS, JavaScript, Fundacion Escuela Tecnologica de Neiva, calculadora, materiales, construccion, cemento, arena, piedra, ladrillo, bloque, madera, hierro">
+        <meta name="author" content="Samuel Giraldo Villanueva">
+        <link rel="icon" type="image/jpeg" href="calco.jpg">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/9d1a86738f.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="pantalla">
+            <aside class="panel-oscuro">
+                <img class="logo" src="calco2.png" alt="Logo CALCO"> 
+            </aside>
+
+            <section class="panel-claro">
+                <span class="etiqueta">ACCESO</span>
+                <h1>Iniciar sesión</h1>
+                <form class="form-login" action="menu-principal.html" method="GET">
+                    <input class="inputs" type="email" placeholder="Usuario" maxlength="50" minlength="4" title="Introduce tu correo electronico" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{1,5}$" required>
+                    <input class="inputs" type="password" placeholder="Contraseña" maxlength="25" minlength="8" title="Introduce tu contraseña" pattern=".{8,25}" required>
+                    <button class="btn" type="submit">Entrar</button>
+                    <a class="redireccion" href="registro.html">¿No tienes cuenta? Regístrate</a>
+                    <a class="redireccion" href="recuperar.html">¿Olvidaste tu contraseña?</a>
+                </form>
+            </section>
+        </div>
+        <footer>
+            <small class="creditos">SAMUEL &copy; 2026</small>
+            <a href="login.html" class="footer-link">LOGIN</a>
+        </footer>
+    </body>
+</html>
